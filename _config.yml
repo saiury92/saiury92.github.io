@@ -1,5 +1,84 @@
 # General Jekyll Config
-highlighter: pygments
-url: http://example.com
-lsi: false
-exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+title:                Saiury92's blog
+subtitle:             Sharing anything I know and I think
+description:          >
+    I am a web developer and an open-source contributor.
+    I like making something that help people's work and
+    I hope those will make a world better.
+
+baseurl:              ""                                      # the subpath of your site, e.g. /blog
+url:                  "https://saiury92.github.io"            # the base hostname & protocol for your site
+timezone:             Asia/Ho_Chi_Minh
+encoding:             utf-8
+locale:               vi_VN
+
+# Build settings
+permalink:            /:year-:month-:day/:title.html
+
+#paginate:             5
+#paginate_path:        "/page:num/"
+
+safe:                 false
+lsi:                  false
+source:               .
+destination:          _site
+layouts_dir:          _layouts
+data_dir:             _data
+include:              [.htaccess]
+exclude:
+  - LICENSE.md
+  - CNAME
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .git
+  - .gitignore
+
+keep_files:           []
+
+future:               true
+unpublished:          false
+markdown:             kramdown
+markdown_ext:         "md"
+excerpt_separator:    "<!--more-->"
+highlighter:          rouge
+
+kramdown:
+  input:              GFM
+  hard_wrap:          false
+  auto_ids:           true
+  footnote_nr:        1
+  entity_output:      as_char
+  toc_levels:         1..6
+  smart_quotes:       lsquo,rsquo,ldquo,rdquo
+  enable_coderay:     false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      css_class:      highlight
+      line_numbers:   true
+      start_line:     1
+      wrap:           true
+
+sass:
+  sass_dir:           _sass
+  style:              :compressed
+
+# Default vars
+defaults:
+  -
+    scope:
+      path:           ""
+      type:           posts
+    values:
+      layout:         post
+      author:         Saiury92
+
+# Site customization
+google_analytics_key: UA-xxxx-x                 # Google Analytics key, leave blank to ignore
+disqus_shortname:     saiur92                   # Disqus shortname for comments
+rss_feed:             /atom.xml                 # link to view rss feed (/atom.xml) in sidebar
+
+# Color for top bar, links, etc
+colors:
+  highlight:         '#3498db'

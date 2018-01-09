@@ -1,4 +1,9 @@
+# User specific & automatically generated files #
+#################################################
 _site/
+
+# OS generated files #
+######################
 .DS_Store
 .*.swp
 .idea

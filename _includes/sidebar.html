@@ -1,24 +1,23 @@
 <nav>
-  <h1>Hi.</h1>
-  <a href="/">
-    {% if site.data.theme.social.gravatar %}
-    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+  <div id="navigation">
+    <a href="{{ '/' | relative_url }}"><i class="fa fa-home"></i></a>
+    <a href="{{ '/archive.html' | relative_url }}"><i class="fa fa-bookmark"></i></a>
+    <a href="{{ '/tags.html' | relative_url }}"><i class="fa fa-tags"></i></a>
+    <!--<a href="{{ '/about.html' | relative_url }}"><i class="fa fa-user"></i></a>-->
+  </div>
+  <a href="{{ '/' | relative_url }}">
+    {% if site.data.author.image %}
+    <img src="{{ site.data.author.image }}" id="avatar" alt="{{ site.data.author.name }}" title="{{ site.data.author.name }}"/>
     {% else %}
-    <img src="/logo.png" id="logo" alt="Blog logo"/>
+    <img src="{{ '/assets/img/apple-touch-icon-180x180.png' | relative_url }}" id="logo" alt="Blog logo" title="{{ site.data.author.name }}"/>
     {% endif %}
   </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <h2 style="height: 30px">{{ site.data.author.name }}</h2>
   <div id="bio">
-    <p>A brief bio or something witty.</p>
-    <p>
-      Edit me in <code>_includes/sidebar.html</code>
-    </p>
+    <p>{{ site.data.author.bio }}</p>
   </div>
   <div id="social">
-    {% include social.html %}
+    {% include social.html social=site.data.author.social rss_feed=site.rss_feed name=site.data.author.name %}
   </div>
-
-  <div id="tags">
-    {% include tags.html %}
-  </div>
+  {% include donate.html %}
 </nav>
