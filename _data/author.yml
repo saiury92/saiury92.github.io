@@ -2,9 +2,8 @@ name:               Saiury92
 email:              khanhthien2105@gmail.com
 image:              https://gravatar.com/userimage/68674936/e88bd51a89aa14fc58910acaea81dd41.jpeg?size=200
 homepage:           https://saiury92.github.io
-bio: >
-    I am a web developer<br>
-    <strong>I want to share anything<br> I know and I think.</strong>
+bio:                I am a web developer.\n
+                    I want to share anything, I know and I think.
 
 social:
   github:           saiury92

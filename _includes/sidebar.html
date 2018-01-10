@@ -14,10 +14,14 @@
   </a>
   <h2 style="height: 30px">{{ site.data.author.name }}</h2>
   <div id="bio">
-    <p>{{ site.data.author.bio }}</p>
   </div>
   <div id="social">
     {% include social.html social=site.data.author.social rss_feed=site.rss_feed name=site.data.author.name %}
   </div>
   {% include donate.html %}
 </nav>
+<script src="{{ '/assets/js/quote-typer.js' | relative_url }}" type="text/javascript"></script>
+<script type="text/javascript">
+  const container = document.querySelector('#bio');
+  quote(container, '{{ site.data.author.bio }}');
+</script>
