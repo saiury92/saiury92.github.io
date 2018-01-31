@@ -76,7 +76,7 @@ defaults:
 
 # Site customization
 google_analytics_key: UA-112254610-1            # Google Analytics key, leave blank to ignore
-disqus_shortname:     saiur92                   # Disqus shortname for comments
+disqus_shortname:     saiury92                   # Disqus shortname for comments
 rss_feed:             /atom.xml                 # link to view rss feed (/atom.xml) in sidebar
 
 # Color for top bar, links, etc
