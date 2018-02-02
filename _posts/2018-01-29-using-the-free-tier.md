@@ -8,7 +8,7 @@ feature:  /assets/img/fi_aws_free_tier.jpg
 
 ## Free Tier ?
 
-Bạn có thế sử dụng một số dịch vụ AWS "chùa" trong một giới hạn nhất định. AWS gọi đây là [AWS Free Tier](https://aws.amazon.com/free/){:target="_blank"}
+Bạn có thể sử dụng một số dịch vụ AWS "chùa" trong một giới hạn nhất định. AWS gọi đây là [AWS Free Tier](https://aws.amazon.com/free/){:target="_blank"}
 . Khi tạo mới một tài khoản AWS bạn nghiễm nhiên được sử dụng chế độ ưu đãi Free Tier trong 12 tháng. Khi Free Tier
 hết hạn, AWS bắt đầu tính phí theo mức thông thường cho những dịch vụ và tài nguyên bạn đang sử dụng.
 
@@ -25,3 +25,14 @@ bắt đầu sẽ tính từ khi *organization* được tạo ra.
 
 Khi chế độ Free Tier sắp kết thúc, AWS sẽ gửi thông báo đến địa chỉ mail đăng ký của bạn. Lúc này, bạn có thể sử dụng tiếp
 và tính phí như bình thường hoặc xóa các dịch vụ tài nguyên hay là đóng tài khoản AWS của mình.
+
+## Free Tier Limits ?
+
+Tất cả các dịch vụ miễn phí trên AWS đều có những kiểu giới hạn riêng, bạn được sử dụng trong giới hạn đó mà không phải trả khoản phí nào.
+
+- Amazon EC2: 750 giờ mỗi tháng sử dụng các t2.micro instance của Linux, RHEL hoặc là SLES, và 750 giờ mỗi tháng
+với t2.micro instance của Window.
+
+- Amazon S3: 5GB dung lượng lưu trữ, 20.000 get requests, 2.000 put requests, và 15 GB of data transfer mỗi tháng.
+
+- Amazon RDS: 750 giờ mỗi tháng với db.t2.micro database
