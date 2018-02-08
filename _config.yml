@@ -81,5 +81,5 @@ rss_feed:             /atom.xml                 # link to view rss feed (/atom.x
 
 # Color for top bar, links, etc
 colors:
-  highlight:         '#3498db'
+  highlight:         '#e74c3c'
 theme: jekyll-theme-architect

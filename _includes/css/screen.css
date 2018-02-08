@@ -184,9 +184,15 @@ nav > form {
 #post ul,
 #post blockquote {
     text-align: justify;
+    line-height: 1.5;
 }
 #post p > img {
     max-width: 100%;
+}
+
+img[src$="center"] {
+    display:block;
+    margin: 0 auto;
 }
 
 .sidebar {
@@ -447,10 +453,10 @@ sup {
 .fb-comments, .fb-comments > span, .fb-comments > span > iframe { width: 100%!important }
 
 .old-posts > a {
-  display: block;
-  width: 150px;
-  margin: 0 auto;
-  text-align: center;
-  border-radius: 5px;
-  border: 1px solid #3498db;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #3498db;
 }
