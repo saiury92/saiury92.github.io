@@ -17,7 +17,7 @@ Bạn có 1 tài khoản ngân hàng ! Vào một sáng chủ nhật đẹp tr�
 Hai hành động trên tình cơ xảy ra đồng thời, bạn có 1 củ đi dẩy và vợ bạn có chiếc quần ren đỏ. Nhưng đời không như mơ `Locking` sẻ chỉ
 cho bạn thưởng thức ly cafe hoặc là chiếc quần ren đỏ mà thôi.<br>
 
-Có 2 loại locking trong hibernate là Pessimistic Locking và Pessimistic Locking.
+Có 2 loại locking trong hibernate là Pessimistic Locking và Optimistic Locking.
 ![Database Locking](/assets/img/hibernate-locking.png?style=center)
 
 Đối với Pessimistic lock, khi bắt đầu 1 transaction, nó sẽ khóa dữ liệu mà nó sử dụng lại và mở khóa khi nó đã sử dụng xong.
