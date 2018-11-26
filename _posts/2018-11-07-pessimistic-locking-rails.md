@@ -14,6 +14,7 @@ Khác với optimistic locking là kiểm tra `lock_version` khi cập nhật d�
 truy cập vào dữ liệu đó, tất cả những người dùng khác sẽ bị loại cho đến khi tiến trình cập nhật của dữ liệu của người dùng lock đầu tiên
 hoàn thành.
 
+<!--more-->
 ```ruby
   account = Account.find_by_user_id(5)
   account.lock!
