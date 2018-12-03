@@ -2,7 +2,7 @@
 title: Pessimistic Locking trong Rails
 layout:   post
 category: tutorial-tips
-tags:     [ruby, rails]
+tags:     [ruby, rails, sql]
 feature: /assets/img/hqdefault.jpg
 ---
 
