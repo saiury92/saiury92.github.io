@@ -61,7 +61,7 @@ Preload sẽ tải thêm dữ liệu quan hệ trong một truy vấn riêng bi�
 luôn luôn tạo ra 2 câu lệnh sql riêng biệt nên không thể kết hợp với điều kiện ở bảng liên kết.
 
 ```ruby
-  Article.preload(:comments)..limit(2)
+  Article.preload(:comments).limit(2)
   # SQLite3::SQLException: no such column: comments.id
 ```
 Để khác phục vấn đề này rails cung cấp phương thức `includes`
