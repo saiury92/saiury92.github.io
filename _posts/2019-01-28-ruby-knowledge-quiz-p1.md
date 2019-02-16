@@ -20,8 +20,8 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 ![](/assets/img/ruby-knowledge-quiz/q2.png){: style='margin: 8px;'}
 
 + [ ] {: style='margin-right: 3px;'} 0
-+ [ ] {: style='margin-right: 3px;'} 2
-+ [x] {: style='margin-right: 3px;'} TRUE
++ [x] {: style='margin-right: 3px;'} 2
++ [ ] {: style='margin-right: 3px;'} TRUE
 + [ ] {: style='margin-right: 3px;'} FALSE
 {: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
