@@ -17,7 +17,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 <!--more-->
 ##### 2. Đoạn code dưới đây cho ra kết quả nào ?
 
-![]({{ site.url }}/assets/img/ruby-knowledge-quiz/q2.png){: style='margin: 8px;'}
+![](/assets/img/ruby-knowledge-quiz/q2.png){: style='margin: 8px;'}
 
 + [ ] {: style='margin-right: 3px;'} 0
 + [ ] {: style='margin-right: 3px;'} 2
@@ -27,7 +27,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 
 ##### 3. Đoạn code dưới đây cho ra kết quả nào ?
 
-![]({{ site.url }}/assets/img/ruby-knowledge-quiz/q3.png){: style='margin: 8px;'}
+![](/assets/img/ruby-knowledge-quiz/q3.png){: style='margin: 8px;'}
 
 + [ ] {: style='margin-right: 3px;'} 22
 + [ ] {: style='margin-right: 3px;'} 13
@@ -45,7 +45,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 
 ##### 5. Đoạn code dưới đây cho ra kết quả nào ?
 
-![]({{ site.url }}/assets/img/ruby-knowledge-quiz/q5.png){: style='margin: 8px;'}
+![](/assets/img/ruby-knowledge-quiz/q5.png){: style='margin: 8px;'}
 
 + [ ] {: style='margin-right: 3px;'} 30
 + [x] {: style='margin-right: 3px;'} 10
@@ -63,7 +63,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 
 ##### 7. Include code của file lib_module.rb vào một class A, thì cách dùng nào sau đây mỗi khi gọi Class A thì lại đọc lại file lib_module.rb ?
 
-![]({{ site.url }}/assets/img/ruby-knowledge-quiz/q7.png){: style='margin: 8px;'}
+![](/assets/img/ruby-knowledge-quiz/q7.png){: style='margin: 8px;'}
 
 + [x] {: style='margin-right: 3px;'} load "lib_module.rb"
 + [ ] {: style='margin-right: 3px;'} require "lib_module"
@@ -73,7 +73,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 
 ##### 8. Đoạn code dưới đây cho ra kết quả nào ?
 
-![]({{ site.url }}/assets/img/ruby-knowledge-quiz/q8.png){: style='margin: 8px;'}
+![](/assets/img/ruby-knowledge-quiz/q8.png){: style='margin: 8px;'}
 
 + [ ] {: style='margin-right: 3px;'} 30
 + [ ] {: style='margin-right: 3px;'} 60
