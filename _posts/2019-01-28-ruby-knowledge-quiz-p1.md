@@ -12,7 +12,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [ ] {: style='margin-right: 3px;'} 5
 + [ ] {: style='margin-right: 3px;'} 6
 + [ ] {: style='margin-right: 3px;'} 7
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 <!--more-->
 ##### 2. Đoạn code dưới đây cho ra kết quả nào ?
@@ -23,7 +23,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [ ] {: style='margin-right: 3px;'} 2
 + [x] {: style='margin-right: 3px;'} TRUE
 + [ ] {: style='margin-right: 3px;'} FALSE
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 3. Đoạn code dưới đây cho ra kết quả nào ?
 
@@ -33,7 +33,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [ ] {: style='margin-right: 3px;'} 13
 + [ ] {: style='margin-right: 3px;'} 20
 + [x] {: style='margin-right: 3px;'} error
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 4. Câu lệnh lấy object_id của một Object trong Ruby ?
 
@@ -41,7 +41,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [ ] {: style='margin-right: 3px;'} object.get(:object_id)
 + [x] {: style='margin-right: 3px;'} object.method(:object_id).call
 + [x] {: style='margin-right: 3px;'} object.send(:object_id)
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 5. Đoạn code dưới đây cho ra kết quả nào ?
 
@@ -51,7 +51,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [x] {: style='margin-right: 3px;'} 10
 + [ ] {: style='margin-right: 3px;'} 20
 + [ ] {: style='margin-right: 3px;'} error
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 6. Phát biểu nào dưới đây chỉ ra sự khác nhau giữa Blocks và Procs trong Ruby ?
 
@@ -59,7 +59,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [x] {: style='margin-right: 3px;'} Blocks là một đối tượng , Procs không phải là một đối tượng
 + [ ] {: style='margin-right: 3px;'} Procs là một đối tượng , Blocks không phải là một đối tượng
 + [x] {: style='margin-right: 3px;'} Chỉ Blocks là không thể gán cho cho tham số, còn Procs thì gán được
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 7. Include code của file lib_module.rb vào một class A, thì cách dùng nào sau đây mỗi khi gọi Class A thì lại đọc lại file lib_module.rb ?
 
@@ -69,7 +69,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [ ] {: style='margin-right: 3px;'} require "lib_module"
 + [ ] {: style='margin-right: 3px;'} include LibModule
 + [ ] {: style='margin-right: 3px;'} extend LibModule
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 8. Đoạn code dưới đây cho ra kết quả nào ?
 
@@ -79,7 +79,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [ ] {: style='margin-right: 3px;'} 60
 + [ ] {: style='margin-right: 3px;'} 50
 + [x] {: style='margin-right: 3px;'} error
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 9. Hàm nào để xáo trộn thứ tự các phần tử trong mảng ?
 
@@ -87,7 +87,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [ ] {: style='margin-right: 3px;'} randomize
 + [ ] {: style='margin-right: 3px;'} sort
 + [x] {: style='margin-right: 3px;'} shuffle
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 ##### 10. Operator nào dưới đây không có trong Ruby ?
 
@@ -95,7 +95,7 @@ feature:  /assets/img/ruby-knowledge-quiz.png
 + [x] {: style='margin-right: 3px;'} '=%'
 + [ ] {: style='margin-right: 3px;'} '!='
 + [ ] {: style='margin-right: 3px;'} '=='
-{: style='list-style-type: none; margin: 8px;'}
+{: style='list-style-type: none; margin: 8px; font-size: 15px;'}
 
 
 
