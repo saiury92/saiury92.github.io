@@ -228,6 +228,10 @@ img[src$="center"] {
     color: #aaa;
 }
 
+#home h5 {
+    color: #aaa;
+}
+
 #logo, #avatar {
     width: 200px;
     height: auto;
