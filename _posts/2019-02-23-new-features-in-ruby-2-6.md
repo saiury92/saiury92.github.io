@@ -49,7 +49,8 @@ hoặc `Range`, hoặc sử dụng `Numeric#step`, sang ruby 2.6 ta có thể d�
 2.6.0 :1 > (1..).each { |n| puts n }
 2.6.0 :2 > (1..nil).each { |n| puts n }
 ```
-Ngoài ra class `Range` trong ruby 2.6.0 có thêm phương thức mới `%`
+Ngoài ra class `Range` trong ruby 2.6.0 có thêm phương thức mới `%` trả về  đối tượng `Enumerator::ArithmeticSequence` ,
+như ví dụ dưới đây sẽ lấy ra array có bước nhảy là `3`.
     
 ```ruby
 2.6.0 :1 > ((0..) % 3).take(10)
@@ -90,7 +91,7 @@ thể dùng `Enumerator::ArithmeticSequence#last` để lấy được phần t�
 ```
 
 ##### 5. Merge hash với nhiều đối số truyền vào.
-Ở các phiên bản cũ hơn ta chỉ có 1 đối số truyền vào của phương thức `Hash#merge` nhưng ở bản 2.6.0 sẽ không giới hạn đối
+Ở các phiên bản cũ hơn phương thức `Hash#merge` chỉ có 1 đối số truyền vào nhưng ở bản 2.6.0 sẽ không giới hạn đối
 số truyền vào.
 ```ruby
 2.5.0 :1 > a = { a: 1 }
@@ -166,7 +167,8 @@ Comparison:
 ```
 
 ##### 8. Array#union & Array#difference
-Hai phương thức mới `#union` và `#difference` được thêm vào lớp `Array` trong Ruby 2.6
+Hai phương thức mới `#union` và `#difference` được thêm vào lớp `Array` trong Ruby 2.6, để phân biệt và kết hợp giữa các
+mảng.
 
 ```ruby
 2.6.0 :1 > [1,2,3,4,5].difference([3])
@@ -186,4 +188,16 @@ Hai phương thức mới `#union` và `#difference` được thêm vào lớp `
 #=> 11
 2.6.0 :4 > (f >> g).call(3)  # Gống như g.call(f.call(3))
 #=> 15
+```
+
+##### 10. Thêm phương thức `FileUtils#cp_lr`
+
+Phương thức `FileUtils#ln_s` hay `FileUtils#ln_sf` (tự động `force` ghi đè khi liên kết tồn tại) sẽ tạo liên kết tượng trưng
+(symbolic link), trong phiên bản mới ruby 2.6 sẽ thêm phương thức `FileUtils#cp_lr`  tạo liên kết cứng (hard link) từ thư mục
+hoặc file nguồn đến thư mục đích.
+
+```ruby
+# Cài đặt thư viện 'lib' tới 'mylib' tới thư mục app.
+FileUtils.rm_r 'app/mylib', :force => true
+FileUtils.cp_lr 'lib/', 'app/mylib'
 ```
