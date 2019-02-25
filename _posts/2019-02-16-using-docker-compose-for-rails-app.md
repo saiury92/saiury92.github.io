@@ -7,7 +7,7 @@ feature: /assets/img/docker-compose-for-rails.png
 ---
 
 Phận làm dev như phận culi, chỉ đâu đánh đấy, nay code dự án này mai lại chuyển dự án khác, code đồng thời 1 lúc dăm ba dự 
-án là chuyện xưa nay không hiếm gặp. Dự án thì khách hàng yêu cầu cái gì cũng phải mới nhất ruby-2.6.1, rails-6.0.0, mysql-5.7,
+án là chuyện xưa nay không hiếm gặp. Dự án thì khách hàng yêu cầu cái gì cũng phải mới nhất ruby-2.6.1, rails-6.0.0, mysql-8.0,
 dự án khác thì đã phát triển từ thời napoleon ruby-2.0.0, rails-4.0.0, mysql-5.5. Các dự án có môi trường dev muôn hình muôn vẻ
 mà công ty chỉ cấp cho một cái máy để dev cả nhiệm kỳ. Trời sinh trouble ắt sinh docker !!!
 
@@ -136,7 +136,17 @@ docker ps -a
 # e021f50ec5e5    mysql:5.5.61            "docker-entrypoint.s…"   22 minutes ago    Up 22 minutes   3306/tcp                         app_db_1
 ```
 
+##### Bước 4: Debug và Console
+Sau khi đã tạo vào chạy các containers, có thể truy cập vào app web theo đường dẫn `http://localhost:3000` và giao diện web của phpmyadmin
+theo đường dẫn `http://localhost:8080`
 
+Để có thể tương tác với log của rails server trong shell cần thiết lập hai thuộc tính `tty: true`, `stdin_open: true` trong 
+docker-compose.yml như trên, và sử dụng `docker attach app_web_1` để follow theo dòng log của rails server, và thao tác debug
+khi app hỗ trợ một số thư viện debug như `pry`. Hoặc có thể sử dụng `docker exec -it app_web_1 /bin/bash` truy cập vào 
+trong thưc mục chứa dự án trong container.
 
+##### TL;DR
 
+Tùy thuộc vào cấu hình của từng dự án mà ta có thể tìm version các images tướng ứng, để lựa chọn các version có thể truy cập
+[Docker Hub](https://hub.docker.com){:target="_blank"} tìm kiếm những version cần dùng.
  
