@@ -194,7 +194,8 @@ mảng.
 
 Phương thức `FileUtils#ln_s` hay `FileUtils#ln_sf` (tự động `force` ghi đè khi liên kết tồn tại) sẽ tạo liên kết tượng trưng
 (symbolic link), trong phiên bản mới ruby 2.6 sẽ thêm phương thức `FileUtils#cp_lr`  tạo liên kết cứng (hard link) từ thư mục
-hoặc file nguồn đến thư mục đích.
+hoặc file nguồn đến thư mục đích, để hiểu rõ về 2 loại liên kết này hãy tham khảo bải viết
+[hard link và symbolic link](https://saiury92.github.io/2019-02-25/hard-link-vs-symbolic-link-in-linux.html){:target="_blank"}.
 
 ```ruby
 # Cài đặt thư viện 'lib' tới 'mylib' tới thư mục app.
