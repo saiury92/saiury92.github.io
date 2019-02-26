@@ -26,7 +26,7 @@ root@localhost:~$ ls -i
 
 ![](/assets/img/hard-link.png?style=center){: style='margin-top: 20px;'}
 
-Ta có file nguồn tên là `filename`, có chỉ số inode là `inode`, địa chỉ bộ nhớ `addresses`, vùng trữ chữ dữ liệu là `data`. 
+Ta có file nguồn tên là `filename`, có chỉ số inode là `inode`, địa chỉ bộ nhớ `addresses`, vùng lưu trữ dữ liệu là `data`. 
 Khi tạo hard link có tên file `othername`, thì chỉ số đi kèm với nó sẽ chính là `inode` của `filename`.
 
 
@@ -74,7 +74,7 @@ root@localhost:~$ ls -il
 ![](/assets/img/diff-hard-link-vs-soft-link.png?style=center){: style='margin-top: 20px;'}
 
 Liên kết tượng trưng (symbolic link) sẽ sinh ra inode mới tham chiếu đến địa chỉ trỏ đến vùng nhớ đường dẫn của file gốc, còn liên kết
-cứng (hard link) thì không. Chính điều này dẫn đến việc khi xóa file nguồn đường dẫn đến file gốc sẽ sẽ bị mất, sẽ không truy
+cứng (hard link) thì không. Chính điều này dẫn đến việc khi xóa file nguồn đường dẫn đến file gốc sẽ bị mất, sẽ không truy
 cập được dữ liệu thông qua symbolic link, về phía hard link vẫn được tham chiếu đến địa chỉ và vùng nhớ lưu trữ dữ liệu. Chỉ
 khi nào tất cả các hard link, tên file tương ứng với inode đó bị xóa thì dữ liệu mới bị xóa.
 
