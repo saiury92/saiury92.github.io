@@ -92,7 +92,7 @@ end
 
 # user.rb
 class User < SecondaryBase
-  belongs_to :address, :class_name => User.name, :foreign_key => :uid, :primary_key => :uid
+  belongs_to :address, :class_name => Address.name, :foreign_key => :uid, :primary_key => :uid
 end
 ```
 Model `User` lúc này được ánh xạ đến bảng `users` trong `secondary` và `Address` sẽ được ánh xạ tới `addresses` trong `primary`,
