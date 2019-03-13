@@ -98,7 +98,7 @@ end
 Model `User` lúc này được ánh xạ đến bảng `users` trong `secondary` và `Address` sẽ được ánh xạ tới `addresses` trong `primary`,
 và có khả năng chuyển đối tới `tertiary` qua `role: reading`. Và chúng ta có thể sử dụng các association như bình thường.
 
-##### Time to test ?
+##### Time to test !!!!
 
 ```ruby
 # Dữ liệu từ primary database
@@ -149,4 +149,40 @@ Address.connected_to(role: :reading) do
   @user.address.reload
 end
 #=> Address id: 1, uid: "u001", address_name: "address in tertiary", created_at: "2019-03-01 00:00:00", updated_at: "2019-03-01 00:00:00"
+```
+
+##### Demo time !!!!
+
+* Tải source code của rails 6.0.0.beta2 có sẵn docker-compose.yml, Dockerfile, dump file của tertiary database:
+
+```console
+# Clone with SSH
+root@localhost:~$ git clone git@github.com:saiury92/multiple-db-on-rails.git app/
+# Clone with HTTPS
+root@localhost:~$ git clone https://github.com/saiury92/multiple-db-on-rails.git app/
+```
+
+* Tạo images nếu images chưa tồn tại, đồng thời tạo và khởi động các containers:
+
+```console
+root@localhost:~$ cd app/
+root@localhost:~/app$ docker-compose up
+```
+
+* Truy cập vào web_app container và chạy task migrate để tạo database, sinh dữ liệu mẫu:
+
+```console
+root@localhost:~/app$ docker exec -it app_web rails db:setup
+```
+
+* Có thể truy cập vào rails console để chạy command ở phần test trên:
+
+```console
+root@localhost:~/app$ docker exec -it app_web rails c
+```
+
+* Chạy rails server và truy cập `http://localhost:3000` để vào web app:
+
+```console
+root@localhost:~/app$ docker exec -it app_web rails s
 ```
