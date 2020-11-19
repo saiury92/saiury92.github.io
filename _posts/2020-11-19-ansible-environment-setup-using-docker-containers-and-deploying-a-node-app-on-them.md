@@ -284,4 +284,4 @@ Anh em nào giống tôi không ? Máy công ty lúc nào cũng trong tình tr�
 ubuntu:~$ docker stop node-server1 node-server2 && docker rm node-server1 node-server2 && docker rmi ubuntu-ssh-enabled
 ```
 
-###### Link --> [github](https://github.com/saiury92/docker-ansible-nodejs) <--- cho bạn nào muốn ăn xổi !!!
+###### Link --> [github](https://github.com/saiury92/docker-ansible-nodejs){:target="_blank"} <--- cho bạn nào muốn ăn xổi !!!
