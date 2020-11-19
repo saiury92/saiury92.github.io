@@ -11,10 +11,10 @@ Hôm nay, Hà Nội về đông lạnh quá ! Sáng đến công ty lúc 7h30, h
 <!--more-->
 
 Trong bài viết này, mình sẽ sử dụng hai docker containners như cái chiếu mới, chẳng cái cắm gì, được base từ `ubuntu:18.04`
-, à có cài `openssh-server` để  có thể ssh vào từ ngoài host và python để  ansible có thể vận công trong đó. Ansible sẽ thực thi playbooks để cài đặt môi trường nodejs và triển khai ứng dụng nodejs vào trong 2 cái containners đó ! Tất nhiên các bạn cần phải [cài docker](https://docs.docker.com/engine/install){:target="_blank"} và [cài ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu){:target="_blank"} vào máy host của các bạn nhé.
+, à có cài `openssh-server` để  có thể ssh vào từ ngoài host và python để  ansible có thể vận công trong đó. Ansible sẽ thực thi playbooks để cài đặt môi trường nodejs và triển khai ứng dụng nodejs vào trong hai cái containners đó ! Tất nhiên các bạn cần phải [cài docker](https://docs.docker.com/engine/install){:target="_blank"} và [cài ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu){:target="_blank"} vào máy host của các bạn nhé.
 
 ## Ansible Là gì ?
-Hiểu đơn giản nó là một platform opensource, bạn cần khai báo địa chỉ server đích và các tập lệnh, ansible sẽ giúp bạn thực thi các script bạn vừa viết trên trong server đó. Trong bài viết sử dụng 2 docker containners như 2 server đích.
+Hiểu đơn giản nó là một platform opensource, bạn cần khai báo địa chỉ server đích và các tập lệnh, ansible sẽ giúp bạn thực thi các script bạn vừa viết trong server đó. Trong bài viết sử dụng hai docker containners như hai server đích.
 
 ## Tạo docker containers
 Sử  dụng `Dockerfile` dưới đây để tạo `ubuntu-ssh-enabled` image
@@ -41,7 +41,7 @@ CMD ["/usr/sbin/sshd", "-D"]
 ubuntu:~$ docker build -t ubuntu-ssh-enabled .
 ```
 
-Tạo  2 docker containners từ image trên
+Tạo hai docker containners từ image trên
 
 ```properties
 # Tạo containner với tên node-server1
@@ -103,7 +103,7 @@ node-server1
 node-server2
 ```
 
-Có thể thiết lập các thông số như ssh user hay ssh password ở ngay trong file `inventory` trên, nhưng để chuyên nghiệp và dễ dàng quản lý các host name, ta nên thiết lập các cấu hình đó vào trong các file yml tương ứng với các host name ở folder `host_vars`. Cụ thể  trong phạm vi bài viết là  2 file `~/docker-ansible-nodejs/host_vars/node-server1.yml` và `~/docker-ansible-nodejs/host_vars/node-server2.yml` (chú ý tên file phải trùng với host name ở inventory)
+Có thể thiết lập các thông số như ssh user hay ssh password ở ngay trong file `inventory` trên, nhưng để chuyên nghiệp và dễ dàng quản lý các host name, ta nên thiết lập các cấu hình đó vào trong các file yml tương ứng với các host name ở folder `host_vars`. Cụ thể  trong phạm vi bài viết là  hai file `~/docker-ansible-nodejs/host_vars/node-server1.yml` và `~/docker-ansible-nodejs/host_vars/node-server2.yml` (chú ý tên file phải trùng với host name ở inventory)
 
 ```yml
 # Tạo file ~/docker-ansible-nodejs/host_vars/node-server1.yml
@@ -264,7 +264,7 @@ node-server1               : ok=8    changed=6    unreachable=0    failed=0    s
 node-server2               : ok=8    changed=6    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0
 ```
 
-Kiểm tra app trong 2 containers xem có chạy không nào ???? Có thể truy cập vào 2 địa chỉ `http://172.17.0.2:3000/` và `http://172.17.0.3:3000/` từ browser hoặc sử dụng curl
+Kiểm tra app trong hai containers xem có chạy không nào ???? Có thể truy cập vào hai địa chỉ `http://172.17.0.2:3000/` và `http://172.17.0.3:3000/` từ browser hoặc sử dụng curl
 
 ```bash
 ubuntu:~/docker-ansible-nodejs$ curl 172.17.0.2:3000
