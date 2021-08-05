@@ -1,5 +1,5 @@
 ---
-title: 'Kubernetes Part I | <u>Khái niệm</u> và kiến trúc'
+title: 'Kubernetes Part I | Khái niệm và kiến trúc'
 layout:   post
 category: tutorial-tips
 tags:     [kubernetes]
