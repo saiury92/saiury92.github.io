@@ -49,4 +49,4 @@ Worker node là nơi mà các ứng dụng được triển khai. Trong một k8
 * Container runtime là một dịch vụ dùng để chạy các containers, một số container runtimes phổ biến như: containerd, CRI-O, docker.
 
 
-Trải qua [Part I](https://blog.thiennk.net/2021-08-04/kubernetes-basic-p1.html) và Part II dường như chúng ta đã hình dung được k8s là gì, thành phần cơ bản nó là gì. Nếu anh em còn bỡ ngỡ thì đừng lo, hôm sau tôi sẽ giới thiệu tới các bạn về **minikube** giúp chúng ta thực hành k8s trên local để hiểu chi tiết hơn.
+Trải qua [Part I](https://blog.thiennk.net/2021-08-04/kubernetes-basic-p1.html) và Part II dường như chúng ta đã hình dung được k8s là gì, thành phần cơ bản nó là gì. Nếu anh em còn bỡ ngỡ thì đừng lo, hôm sau tôi sẽ giới thiệu tới các bạn về **minikube** giúp chúng ta thực hành k8s trên local để hiểu chi tiết hơn. Còn bây giờ chào thân ái và hiện gặp lại !
