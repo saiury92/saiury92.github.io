@@ -25,7 +25,7 @@ cloud provider thì có thêm cloud controller manager.
 ![](/assets/img/kubernetes/master-node.png?style=center){: style='margin-top: 10px; margin-bottom: 10px; width: 60%'}
 * API server: Cung cấp RESTful API cho client (như kubectl) tương tác với k8s, giúp các thành phần khác liên lạc với
 nhau.
-  ![](/assets/img/kubernetes/api-server.png?style=center){: style='margin-top: 10px; margin-bottom: 10px; width: 60%'}
+  ![](/assets/img/kubernetes/api-server.png?style=center){: style='margin-top: 10px; margin-bottom: 10px; width: 70%'}
 * Scheduler: Sử dụng k8s API để theo dõi các pod chưa được lên lịch (pod chưa được gán vào node nào). Sau đó, scheduler sẽ đặt
   các pod đó vào các node thích hợp dựa trên tài nguyên hiện có và các ràng buộc khác được định nghĩa trong manifest file của pod. Scheduler
   đảm bảo các pod của cùng application được phân bố trên các node khác nhau để đảm bảo tính khả dụng.
@@ -44,7 +44,7 @@ nhau.
 Worker node là nơi mà các ứng dụng được triển khai. Trong một k8s cluster có thể  có nhiều worker nodes, trong một worker node có thể có nhiều pods, trong pod có thể có nhiều containers. Worker node gồm 3 thành phần chính: kube-proxy, kubelet, container runtime.
 ![](/assets/img/kubernetes/worker-node-2.png?style=center){: style='margin-top: 10px; margin-bottom: 10px;}
 * Kubelet là một node agent được hoạt động dưới dạng PodSpec. Kubelet nhận tập các PodSpecs (đặc tính của Pod) được cung cấp thông qua các cơ chế khác nhau và bảo đảm rằng các containers được mô tả trong những PodSpecs này chạy ổn định và khỏe mạnh (healthy).
-![](/assets/img/kubernetes/podSpec.png?style=center){: style='margin-top: 10px; margin-bottom: 10px;'}
+![](/assets/img/kubernetes/podSpec.png?style=center){: style='margin-top: 10px; margin-bottom: 10px; width: 60%'}
 * Kube-proxy là một dịch vụ network proxy chạy trên mỗi node, giúp các pods giao tiếp với nhau và ra bên ngoài.
 * Container runtime là một dịch vụ dùng để chạy các containers, một số container runtimes phổ biến như: containerd, CRI-O, Docker.
 
