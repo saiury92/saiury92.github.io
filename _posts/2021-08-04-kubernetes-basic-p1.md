@@ -66,6 +66,6 @@ các khái niệm cơ bản mà chúng ta cần phải biết.
   ![](/assets/img/kubernetes/k8s-statefulset.png){: style='margin: 10px; width: 100%'}
   
 Lý thuyết nhàm chán đúng không nào? Tôi hứa sẽ các cho bạn thực hành mớ lý trên ở bài **minikube** trong phần III, và **helm** trong phần IV.
-Còn phần II tôi vẫn sẽ tiếp tục giới thiệu về kiến trúc k8s với nhưng khái niệm master node, worker node, APIServer, Etcd, .. 
+Còn [phần II](https://blog.thiennk.net/2021-08-08/kubernetes-basic-p2.html) tôi vẫn sẽ tiếp tục giới thiệu về kiến trúc k8s với nhưng khái niệm master node, worker node, APIServer, Etcd, .. 
 Chào thân ái và hiện gặp lại !
 

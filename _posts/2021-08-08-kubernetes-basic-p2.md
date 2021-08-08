@@ -15,7 +15,7 @@ gửi tới anh em part II, nội dung chính vẫn là một số khái niệm 
 ![](/assets/img/kubernetes/k8s-architecture-1.png?style=center){: style='margin: 10px; width: 100%'}
 
 K8s cluster là tập hợp nhiều node, node có thể là physical machine hoặc virtual machine, node cung cấp
-các tài nguyên như computing, memory , storage, networking. Một số tài liệu cũ node còn gọi là Minion.
+các tài nguyên như computing, memory, storage, networking. Một số tài liệu cũ node còn gọi là Minion.
 Có hai loại node chính trong k8s cluster đó là master node và worker node.
 
 ## Master node
@@ -46,7 +46,7 @@ Worker node là nơi mà các ứng dụng được triển khai. Trong một k8
 * Kubelet là một node agent hoạt động dưới dạng PodSpec. Kubelet nhận tập các PodSpecs (đặc tính của Pod) được cung cấp thông qua các cơ chế khác nhau và bảo đảm rằng các containers được mô tả trong những PodSpecs này chạy ổn định và khỏe mạnh (healthy).
 ![](/assets/img/kubernetes/podSpec.png?style=center){: style='margin-top: 10px; margin-bottom: 10px; width: 60%'}
 * Kube-proxy là một dịch vụ network proxy chạy trên mỗi node, giúp các pods giao tiếp với nhau và ra bên ngoài.
-* Container runtime là một dịch vụ dùng để chạy các containers, một số container runtimes phổ biến như: containerd, CRI-O, Docker.
+* Container runtime là một dịch vụ dùng để chạy các containers, một số container runtimes phổ biến như: containerd, CRI-O, docker.
 
 
-Trải qua [Part I](https://blog.thiennk.net/2021-08-04/kubernetes-basic-p1.html) và Part II dường như chúng ta đã hình dung được k8s là gì, thành phần cơ bản nó là gì. Nếu anh em còn bỡ ngỡ thì đừng lo, hôm sau tôi sẽ giới thiệu cho các bạn bài về **minikube** giúp chúng ta thực hành k8s trên local để hiểu chi tiết hơn.
+Trải qua [Part I](https://blog.thiennk.net/2021-08-04/kubernetes-basic-p1.html) và Part II dường như chúng ta đã hình dung được k8s là gì, thành phần cơ bản nó là gì. Nếu anh em còn bỡ ngỡ thì đừng lo, hôm sau tôi sẽ giới thiệu tới các bạn về **minikube** giúp chúng ta thực hành k8s trên local để hiểu chi tiết hơn.
