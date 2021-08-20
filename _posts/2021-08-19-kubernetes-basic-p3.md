@@ -51,7 +51,7 @@ kubectl create deployment hello-world \
     --port=3000
 ```
 ![](/assets/img/kubernetes/create-deployment.png){: style='margin-top: 10px; margin-bottom: 10px; width: 100%'}
-Với option **--replicas=2** là số lượng pod được tạo, **--image=saiury92/hello-world:latest** xác định image để tạo container, **--port=3000** là port container được expose.
+Với option **--replicas=2** là số lượng pod được tạo, **--image=saiury92/hello-world:latest** xác định image để tạo container, **--port=3000** là port của container được expose.
 #### 2. Tạo service
 Sử dụng câu lệnh ```kubectl expose deployment hello-world``` để tạo service cho **hello-world** deployment.
 ``` bash
